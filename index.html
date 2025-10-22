@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Store API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Fake Store</h1>
+    <div class="controls">
+      <div>
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Search by title..." />
+      </div>
+      <div>
+        <label for="categoryFilter">Category:</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div>
+        <label for="sortFilter">Order by price:</label>
+        <select id="sortFilter">
+          <option value="default">default</option>
+          <option value="low-high">Lowest to highest</option>
+          <option value="high-low">Highest to Lowest</option>
+        </select>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Image</th>
+      </thead>
+      <tbody id="productsTable"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
